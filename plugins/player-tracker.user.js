@@ -141,6 +141,7 @@ window.plugin.playerTracker.eventHasLatLng = function(ev, lat, lng) {
 }
 
 window.plugin.playerTracker.processNewData = function(data) {
+  cosole.log(data)
   var limit = plugin.playerTracker.getLimit();
   $.each(data.raw.success, function(ind, json) {
     // skip old data
